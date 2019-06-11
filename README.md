@@ -4,8 +4,9 @@ Noddy node file to provide notifications via Slack about players who are on your
 ## Prerequisites ##
 * Install [NodeJs](https://nodejs.org/en/) v10.11.0
 > If installing on Windows make sure you install windows build tools first :
-
+>
 > ```npm install --global --production windows-build-tools```
+>
 * [Slack](https://api.slack.com/apps) : Create a new App and add a new incoming webhoook
 
 ## Setup ##
