@@ -1,0 +1,15 @@
+{
+  "name": "MinecraftStatus",
+  "version": "1.0.0",
+  "description": "Slack notifications about minecraft server player online status",
+  "main": "isOnline.js",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node isOnline.js "
+  },
+  "author": "Nathan Cashmore",
+  "license": "ISC"
+}
