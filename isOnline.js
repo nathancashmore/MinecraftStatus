@@ -1,8 +1,10 @@
 const request = require('request');
+const moment = require('moment');
 
 const slackUrl = process.env.SLACK_URL;
+const interval = process.env.INTERVAL;
 const server = process.argv.slice(2);
-const interval = 5000;
+
 
 const statsUrl = 'https://api.mcsrvstat.us/2/';
 
@@ -82,6 +84,7 @@ function sendOnlineNotification(body) {
 }
 
 function execute() {
+  console.log(`${moment().format()} - Polling for status update on ${server}`)
   request(`${statsUrl}${server}`, {json: true}, (err, res, body) => {
     if (err) {
       return console.log(err);
@@ -106,17 +109,18 @@ function execute() {
   });
 }
 
-if(slackUrl === undefined || server.toString() === '') {
+if(slackUrl === undefined || interval === undefined || server.toString() === '' ) {
 
-  console.log("Usage: SLACK_URL=https://hooks.slack.com/services/xxxxxx/xxxxx npm start minecraft.server.name:25565");
+  console.log("Usage: SLACK_URL=https://hooks.slack.com/services/xxxxxx/xxxxx INTERVAL=10000 npm start minecraft.server.name:25565");
   console.log();
   process.exit(0);
 
 } else {
 
-  console.log("Starting service with the following parameters");
+  console.log(`${moment().format()} - Starting service with the following parameters`);
   console.log(`SLACK_URL=${slackUrl}`);
   console.log(`SERVER=${server}`);
+  console.log(`INTERVAL=${interval}`);
   setInterval(execute, interval);
 
 }

@@ -4,6 +4,7 @@
   "description": "Slack notifications about minecraft server player online status",
   "main": "isOnline.js",
   "dependencies": {
+    "moment": "^2.24.0",
     "request": "^2.88.0"
   },
   "devDependencies": {},

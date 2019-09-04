@@ -19,5 +19,5 @@ npm install
 ```
 ## Run ##
 ```
-SLACK_URL=https://hooks.slack.com/services/xxxxxx/xxxxx npm start minecraft.server.name:25565 
+SLACK_URL=https://hooks.slack.com/services/xxxxxx/xxxxx INTERVAL=10000 npm start minecraft.server.name:25565 
 ```
