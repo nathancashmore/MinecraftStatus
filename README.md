@@ -17,7 +17,19 @@ Noddy node file to provide notifications via Slack about players who are on your
 ```
 npm install
 ```
+
+## Test ##
+```
+npm test
+```
 ## Run ##
 ```
-SLACK_URL=https://hooks.slack.com/services/xxxxxx/xxxxx INTERVAL=10000 npm start minecraft.server.name:25565 
+SLACK_URL=https://hooks.slack.com/services/xxxxxx/xxxxx SERVER=minecraft.server.name:25565 npm start
+```
+By default the service will run every 10 seconds to check for any change in the number of players online.  It will only
+create a new Slack message if there has been a change.  To change the check interval, change the INTERVAL parameter.
+e.g. for a check interval of 1 minute add an interval parameter of 60.  
+
+```
+INTERVAL=60
 ```

@@ -1,0 +1,59 @@
+GET /2/bungee.with.one.player.co.uk
+host: api.mcsrvstat.us
+accept: application/json
+
+HTTP/1.1 200 OK
+connection: close
+date: Thu, 02 Apr 2020 11:56:05 GMT
+server: Apache
+cache-control: public,must-revalidate,max-age=600
+access-control-allow-origin: *
+vary: Accept-Encoding,X-Forwarded-Proto
+content-security-policy: default-src 'none';  img-src 'self' mcsrvstat.us dev.mcsrvstat.us banners.mctools.org www.google-analytics.com; font-src 'self' fonts.gstatic.com; script-src 'self' stackpath.bootstrapcdn.com code.jquery.com www.google-analytics.com cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' stackpath.bootstrapcdn.com cdnjs.cloudflare.com fonts.googleapis.com; connect-src 'self' www.google-analytics.com; upgrade-insecure-requests; report-uri https://spirit55555.report-uri.com/r/d/csp/enforce
+referrer-policy: strict-origin-when-cross-origin
+expect-ct: max-age=0, report-uri='https://spirit55555.report-uri.com/r/d/ct/reportOnly'
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block; report=https://spirit55555.report-uri.com/r/d/xss/enforce
+x-content-type-options: nosniff
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+transfer-encoding: chunked
+content-type: application/json
+via: 1.1 vegur
+
+{
+  "ip": "81.130.235.110",
+  "port": 25565,
+  "debug": {
+    "ping": true,
+    "query": false,
+    "srv": false,
+    "querymismatch": "81.130.235.110:25575",
+    "ipinsrv": false,
+    "cnameinsrv": false,
+    "animatedmotd": false,
+    "proxypipe": false,
+    "cachetime": 0,
+    "apiversion": 2
+  },
+  "motd": {
+    "raw": [
+      "§8Static §r§aV§r§cO§r§eI§r§bD §r§8Lobby§r"
+    ],
+    "clean": [
+      "Static VOID Lobby"
+    ],
+    "html": [
+      "<span style=\"color: #555555\">Static </span><span style=\"color: #55FF55\">V</span><span style=\"color: #FF5555\">O</span><span style=\"color: #FFFF55\">I</span><span style=\"color: #55FFFF\">D </span><span style=\"color: #555555\">Lobby</span>"
+    ]
+  },
+  "players": {
+    "online": 1,
+    "max": 10
+  },
+  "version": "1.8.x-1.15.x",
+  "online": true,
+  "protocol": 578,
+  "hostname": "minecraft.staticvoid.co.uk",
+  "icon": "data:image/png;base64,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",
+  "software": "BungeeCord"
+}

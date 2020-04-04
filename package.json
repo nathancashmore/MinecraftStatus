@@ -2,14 +2,20 @@
   "name": "MinecraftStatus",
   "version": "1.0.0",
   "description": "Slack notifications about minecraft server player online status",
-  "main": "isOnline.js",
+  "main": "onlineChecker.js",
   "dependencies": {
     "moment": "^2.24.0",
+    "replay": "^2.4.0",
     "request": "^2.88.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1"
+  },
   "scripts": {
-    "start": "node isOnline.js "
+    "start": "node run.js",
+    "test": "mocha"
   },
   "author": "Nathan Cashmore",
   "license": "ISC"

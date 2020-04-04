@@ -1,0 +1,24 @@
+POST /services/xxx/xxx/xxx
+host: hooks.slack.com
+accept: application/json
+content-type: application/json
+
+HTTP/1.1 200 OK
+content-type: text/html
+transfer-encoding: chunked
+connection: close
+date: Thu, 02 Apr 2020 12:22:54 GMT
+server: Apache
+vary: Accept-Encoding
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+referrer-policy: no-referrer
+x-slack-backend: h
+x-frame-options: SAMEORIGIN
+access-control-allow-origin: *
+x-via: haproxy-www-je5i
+x-cache: Miss from cloudfront
+via: 1.1 d2322e4264977966de69a888b2e0eba9.cloudfront.net (CloudFront)
+x-amz-cf-pop: AMS54-C1
+x-amz-cf-id: 9nYCC8csTGISiqKd3BMULs_w66VmTuoDQFTakbKS3bZvdIta8nJWIg==
+
+ok
